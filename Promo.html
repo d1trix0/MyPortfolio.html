@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo</title>
+     <link rel="stylesheet" href="main.css">
+</head>
+<body style="background-color: #2a292b">
+   <header>
+       <a href="index.html" style="color: #A28620;"><img src="mapache-pedro.gif" alt="" style="width: 100px; height: auto; mix-blend-mode: screen;"></a>
+    </header>
+
+    <main class="Promo-window">
+        <h1>Promo Code</h1>
+        <p>Enter your promo code below.</p>
+
+        <form id="promo-form">
+            <label for="promo-code">Promo code</label>
+            <input id="promo-code" name="promo-code" type="text" placeholder="Enter your code" required>
+            <button type="submit">Apply code</button>
+        </form>
+
+        <p id="promo-message" role="status"></p>
+    </main>
+
+    <footer class="Footer">
+                <div class="dd">
+                
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+
+
+                         <li><a href="main.html" >My Portfolio</a></li>
+                    
+                
+                        <li><a href="about.html">About Us</a></li>
+                    
+                    
+                        <li><a href="contact.html">Contact</a></li>
+                    
+                
+                        <li><a href="news.html">News</a></li>
+                    
+                    
+                        
+                
+                    
+                       
+                    </ul>
+                </div>
+            </footer>
+    <script>
+        const promoForm = document.querySelector('#promo-form');
+        const promoCode = document.querySelector('#promo-code');
+        const promoMessage = document.querySelector('#promo-message');
+
+        promoForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const code = promoCode.value.trim().toUpperCase();
+
+            promoMessage.textContent = code === 'WELCOME10'
+                ? 'Promo code applied: 10% discount.'
+                : 'This promo code is not valid.';
+        });
+    </script>
+</body>
+</html>
