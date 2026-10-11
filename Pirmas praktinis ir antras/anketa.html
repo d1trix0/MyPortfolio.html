@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anketa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="logo">Mūsų projektas</div>
+      <div>Užsakymo anketa</div>
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="about.html">Apie</a></li>
+        <li><a href="contacts.html">Kontaktai</a></li>
+        <li><a href="gallery.html">Galerija</a></li>
+        <li><a href="anketa.html">Anketa</a></li>
+        <li><a href="settings.html">Nustatymai</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <div class="main-column">
+      <h1 class="section-title">Užsakymo anketa</h1>
+
+      <div class="form-wrap">
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="name">Vardas</label>
+              <input id="name" type="text" name="name" placeholder="Įveskite vardą" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">El. paštas</label>
+              <input id="email" type="email" name="email" placeholder="vardas@email.lt" />
+            </div>
+
+            <div class="form-row">
+              <label for="tel">Telefonas</label>
+              <input id="tel" type="tel" name="tel" placeholder="+370..." />
+            </div>
+
+            <div class="form-row">
+              <label for="date">Pageidaujama data</label>
+              <input id="date" type="date" name="date" />
+            </div>
+
+            <div class="form-row">
+              <label for="service">Paslauga</label>
+              <select id="service" name="service">
+                <option value="">Pasirinkite</option>
+                <option value="planavimas">Planavimas</option>
+                <option value="dizainas">Dizainas</option>
+                <option value="vystymas">Vystymas</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="budget">Biudžetas</label>
+              <input id="budget" type="number" name="budget" min="100" step="50" placeholder="€" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Prioritetas</label>
+            <input type="radio" name="priority" value="low" /> Žemas
+            <input type="radio" name="priority" value="medium" /> Vidutinis
+            <input type="radio" name="priority" value="high" /> Aukštas
+          </div>
+
+          <div class="form-row">
+            <label for="notes">Pastabos</label>
+            <textarea id="notes" name="notes" placeholder="Aprašykite pageidavimus..."></textarea>
+          </div>
+
+          <div class="form-row">
+            <label for="file">Prisegti failą</label>
+            <input id="file" type="file" name="file" />
+          </div>
+
+          <div class="form-row">
+            <label>
+              <input type="checkbox" name="newsletter" /> Noriu gauti naujienas
+            </label>
+          </div>
+
+          <div class="form-row">
+            <button type="submit">Siųsti užklausą</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h2 class="section-title">Anketoje naudojami laukeliai</h2>
+      <ul>
+        <li>text</li>
+        <li>email</li>
+        <li>tel</li>
+        <li>date</li>
+        <li>number</li>
+        <li>radio</li>
+        <li>checkbox</li>
+        <li>file</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>© 2026 Svetainės pavyzdys</div>
+      <div>Užklausų anketa</div>
+      <div>info@projektas.lt</div>
+    </div>
+  </footer>
+</body>
+</html>
