@@ -22,6 +22,25 @@
             <h1>Contact us</h1>
             <p>Want to ask about an item or resell something? Send us a message and include the item name or a short description.</p>
             <p>Email: <a href="mailto:hello@ilzebaltic.example">hello@ilzebaltic.example</a></p>
+            <form class="contact-form">
+                <label for="contact-name">Name</label>
+                <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name">
+
+                <label for="contact-email">Email</label>
+                <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+
+                <fieldset class="gender-choice">
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="prefer-not-to-say"> Prefer not to say</label>
+                </fieldset>
+
+                <label for="contact-message">Message</label>
+                <input id="contact-message" name="message" type="text" placeholder="What would you like to ask?">
+
+                <button type="button">Send message</button>
+            </form>
         </main>
         <aside class="asidebar" aria-label="Featured items">
             <img src="reklama-1.jpeg" alt="Featured item from Ilze Baltic">
