@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="top-bar">
-            <ul>
+    <a class="site-logo" href="main.html" aria-label="F1 home"><img src="f1.png" alt="F1"></a>
+    <div class="top-bar">
+        <ul>
             <li><a href="main.html" aria-current="page">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -23,9 +24,39 @@
             <h1>Welcome</h1>
             <p>Ilze baltic its faivoryte site for reseling</p>
             <p>Feel free to explore and modify the code to learn more about HTML and CSS.</p>
-            <div class="image-gallery1">
+            <div class="listing-toolbar" aria-label="Listing sorting and filters">
+                <fieldset class="listing-filters">
+                    <legend>Property type</legend>
+                    <input class="listing-filter-option" type="radio" name="property-type" id="filter-all" checked>
+                    <label class="listing-filter" for="filter-all">All homes</label>
+                    <input class="listing-filter-option" type="radio" name="property-type" id="filter-houses">
+                    <label class="listing-filter" for="filter-houses">Houses</label>
+                    <input class="listing-filter-option" type="radio" name="property-type" id="filter-villas">
+                    <label class="listing-filter" for="filter-villas">Villas</label>
+                </fieldset>
+                <label class="listing-sort">
+                    <span>Sort by</span>
+                    <select aria-label="Sort listings">
+                        <option>Recommended</option>
+                        <option>Newest</option>
+                        <option>Price: low to high</option>
+                        <option>Price: high to low</option>
+                    </select>
+                </label>
+            </div>
+            <div class="property-gallery">
                 <figure>
-                    <img src="home1.jpg" alt="Img" class="Modern House ">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <span class="new-listing">New listing</span>
+                        <img src="home1.jpg" alt="Img" class="Modern House ">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home1">
+                        <label class="listing-favorite" for="favorite-home1" aria-label="Add Modern House to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Modern House</figcaption>
  <p class="property-details">A modern two-story house with panoramic windows, a spacious living room, and a cozy terrace.</p>
                     <p class="property-meta">Area: 180 m²  Rooms: 4</p>
@@ -34,7 +65,17 @@
 
                 </figure>
                 <figure>
-                    <img src="Home2.jpg" alt="Img" class="Cozy Home">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <span class="new-listing">New listing</span>
+                        <img src="Home2.jpg" alt="Img" class="Cozy Home">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home2">
+                        <label class="listing-favorite" for="favorite-home2" aria-label="Add Cozy Home to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Cozy Home</figcaption>
                      <p class="property-details">A compact single-story house with a convenient layout, bright rooms, and a small terrace.</p>
                     <p class="property-meta">Area: 95 m²  Rooms: 3</p>
@@ -42,34 +83,65 @@
               
                 </figure>
                 <figure>
-                    <img src="Home3.jpg" alt="Img" class="Luxury Villa">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <img src="Home3.jpg" alt="Img" class="Luxury Villa">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home3">
+                        <label class="listing-favorite" for="favorite-home3" aria-label="Add Luxury Villa to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Luxury Villa</figcaption>
                    <p class="property-details">A luxurious villa with a swimming pool, large windows, spacious bedrooms, and a beautiful garden.</p>
                     <p class="property-meta">Area: 320 m²  Rooms: 5</p>
                     <p class="property-price">Price: €520 000</p>
                 </p>
                 </figure>
-                
-                   
-                
-            </div>
-            <div class="image-gallery2">
                 <figure>
-                    <img src="home4.jpg" alt="Img" class="Scandinavian House">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <img src="home4.jpg" alt="Img" class="Scandinavian House">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home4">
+                        <label class="listing-favorite" for="favorite-home4" aria-label="Add Scandinavian House to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Scandinavian House</figcaption>
                     <p class="property-details">A cozy Scandinavian-style house featuring natural materials, large windows, and an energy-efficient design.</p>
                     <p class="property-meta">Area: 125 m²  Rooms: 4</p>
                     <p class="property-price">Price: €210 000</p>
                 </figure>
                 <figure>
-                    <img src="home5.jpg" alt="Img" class="Family Residence">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <img src="home5.jpg" alt="Img" class="Family Residence">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home5">
+                        <label class="listing-favorite" for="favorite-home5" aria-label="Add Family Residence to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Family Residence</figcaption>
                    <p class="property-details">A spacious family home with a two-car garage, a separate kitchen, and a well-maintained yard.</p>
                     <p class="property-meta">Area: 210 m²  Rooms: 5</p>
                     <p class="property-price">Price: €340 000</p> 
                 </figure>
                 <figure>
-                    <img src="home6.jpg" alt="Img" class="Minimalist House">
+                    <div class="property-image">
+                        <span class="listing-eye" role="img" aria-label="Views">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Zm10 4a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0-2a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg>
+                        </span>
+                        <img src="home6.jpg" alt="Img" class="Minimalist House">
+                        <input class="listing-favorite-toggle" type="checkbox" id="favorite-home6">
+                        <label class="listing-favorite" for="favorite-home6" aria-label="Add Minimalist House to favorites">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+                        </label>
+                    </div>
                     <figcaption>Minimalist House</figcaption>
                     <p class="property-details">A minimalist house with a flat roof, clean architecture, and an open-plan interior. Perfect for modern living.</p>
                     <p class="property-meta">Area: 145 m²  Rooms: 4</p>
