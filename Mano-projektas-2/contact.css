@@ -1,0 +1,63 @@
+.contact-form {
+    display: grid;
+    gap: 8px;
+    max-width: 480px;
+    margin-top: 24px;
+}
+.contact-form label {
+    color: #1E3A5F;
+    font-weight: 600;
+}
+.contact-form input {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 12px;
+    border: 1px solid #b8c6d3;
+    border-radius: 6px;
+    font: inherit;
+}
+.contact-form input:focus {
+    border-color: #336489;
+    outline: 2px solid #86a0c2;
+    outline-offset: 2px;
+}
+.contact-form .gender-choice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin: 0 0 8px;
+    padding: 12px;
+    border: 1px solid #b8c6d3;
+    border-radius: 6px;
+}
+.contact-form .gender-choice legend {
+    padding: 0 4px;
+    color: #1E3A5F;
+    font-weight: 600;
+}
+.contact-form .gender-choice label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+}
+.contact-form .gender-choice input {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.contact-form button {
+    justify-self: start;
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #1E3A5F;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+.contact-form button:hover,
+.contact-form button:focus-visible {
+    background-color: #336489;
+}
