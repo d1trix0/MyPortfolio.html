@@ -13,15 +13,32 @@ body {
     background-color: #1E3A5F;
 }
 .site-logo img {
-    display: block;
     width: 64px;
     height: 48px;
     object-fit: contain;
 }
+.site-title {
+    margin: 0;
+    padding: 8px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
 
+.site-logo,
+.site-logo:link,
+.site-logo:visited,
+.site-logo:hover,
+.site-logo:active,
+.site-logo:focus {
+    text-decoration: none;
+    color: inherit;
+  
+}
 .top-bar ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
     background-color: #1E3A5F;
     border-bottom: 2px solid #86a0c2;
     list-style: none;
@@ -34,7 +51,7 @@ body {
     padding: 10px 14px;
     color: #fff;
     text-decoration: none;
-    transition: background-color 160ms ease;
+    transition: background-color 200ms ease;
 }
 .top-bar a:hover,
 .top-bar a:focus-visible,
